@@ -141,10 +141,10 @@ if (this_url.indexOf("http://localhost") === 0) {
 }
 
 // var debugging = get_parameter('debugging', '0') !== '0';
-debugging = false;
+var debugging = false;
 
 // var together = get_parameter('together', '0') !== '0';
-together = false;
+var together = false;
 
 var add_css = function (URL) {
     var css;
