@@ -140,9 +140,11 @@ if (this_url.indexOf("http://localhost") === 0) {
     window.TOONTALK.ORIGIN_FOR_GOOGLE_DRIVE = window.location.origin;
 }
 
-var debugging = get_parameter('debugging', '0') !== '0';
+// var debugging = get_parameter('debugging', '0') !== '0';
+debugging = false;
 
-var together = get_parameter('together', '0') !== '0';
+// var together = get_parameter('together', '0') !== '0';
+together = false;
 
 var add_css = function (URL) {
     var css;
@@ -216,13 +218,13 @@ if (debugging) {
 //                   "libraries/jquery.ui.touch-punch.min.js"
                   ];
 } else {
-    file_names = ["https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
-                  log_errors && "https://cdn.ravenjs.com/3.22.1/raven.min.js",
+    file_names = ["libraries/lib/jquery.min.js",//"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
+                  log_errors && "libraries/lib/raven.min.js",//"https://cdn.ravenjs.com/3.22.1/raven.min.js",
 //                   "libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js",
                   "compile/compiled_toontalk.js",
                   // following caused errors when added to compiiled_toontalk due to ta-in entry
-                  "https://ecraft2learn.github.io/ai/ecraft2learn.js",
-                  "https://apis.google.com/js/client.js?onload=handle_client_load",
+                  "libraries/lib/ecraft2learn.js",//"https://ecraft2learn.github.io/ai/ecraft2learn.js",
+                  "libraries/lib/client.js?onload=handle_client_load",//"https://apis.google.com/js/client.js?onload=handle_client_load",
 //                   "https://www.dropbox.com/static/api/2/dropins.js",  // handled below -- partial support for saving to DropBox
                   // following enables JQuery UI resize handles to respond to touch
                   // Note that including this in the closure compiler resulted in errors
