@@ -219,7 +219,7 @@ if (debugging) {
                   ];
 } else {
     file_names = ["libraries/lib/jquery.min.js",//"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
-                  log_errors, //&& "libraries/lib/raven.min.js",//"https://cdn.ravenjs.com/3.22.1/raven.min.js",
+                  // log_errors && "https://cdn.ravenjs.com/3.22.1/raven.min.js",
 //                   "libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js",
                   "compile/compiled_toontalk.js",
                   // following caused errors when added to compiiled_toontalk due to ta-in entry
