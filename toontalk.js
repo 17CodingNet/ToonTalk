@@ -224,7 +224,7 @@ if (debugging) {
                   "compile/compiled_toontalk.js",
                   // following caused errors when added to compiiled_toontalk due to ta-in entry
                   "libraries/lib/ecraft2learn.js",//"https://ecraft2learn.github.io/ai/ecraft2learn.js",
-                  "libraries/lib/client.js?onload=handle_client_load",//"https://apis.google.com/js/client.js?onload=handle_client_load",
+                  //"libraries/lib/client.js?onload=handle_client_load",//"https://apis.google.com/js/client.js?onload=handle_client_load",
 //                   "https://www.dropbox.com/static/api/2/dropins.js",  // handled below -- partial support for saving to DropBox
                   // following enables JQuery UI resize handles to respond to touch
                   // Note that including this in the closure compiler resulted in errors
