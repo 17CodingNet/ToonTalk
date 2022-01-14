@@ -201,13 +201,13 @@ window.TOONTALK.SETTINGS =
                                                              "toontalk-save-setting",
                                                              "When saving to the cloud use my Dropbox account",
                                                              'Check this if you want your programs saved to a "ToonTalk Reborn" folder in the "Apps" folder in your Dropbox.');
-          var save_to_google_drive = TT.UTILITIES.create_check_box(widget.get_setting('save_to_google_drive'),
+          var save_to_google_drive = TT.UTILITIES.create_check_box(false,//widget.get_setting('save_to_google_drive'),
                                                              "toontalk-save-setting",
                                                              "When saving to the cloud use my Google Drive account",
                                                              'Check this if you want your programs saved to a "ToonTalk Programs" folder in your Google Drive.');
           // ideally "ToonTalk Programs" should be <i class='notranslate' translate='no'>ToonTalk Programs</i>
           // but see http://stackoverflow.com/questions/15734105/jquery-ui-tooltip-does-not-support-html-content
-          var auto_save_to_cloud    = TT.UTILITIES.create_check_box(widget.get_setting('auto_save_to_cloud'),
+          var auto_save_to_cloud    = TT.UTILITIES.create_check_box(false,//widget.get_setting('auto_save_to_cloud'),
                                                              "toontalk-save-setting",
                                                              "Save automatically to cloud storage",
                                                              'Check this if you want your programs to Dropbox or Google Drive when your program changes.');
