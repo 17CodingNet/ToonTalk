@@ -141,7 +141,7 @@ if (this_url.indexOf("http://localhost") === 0) {
 }
 
 // var debugging = get_parameter('debugging', '0') !== '0';
-var debugging = false;
+var debugging = true;
 
 // var together = get_parameter('together', '0') !== '0';
 var together = false;
