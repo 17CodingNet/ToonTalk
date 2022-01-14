@@ -182,11 +182,11 @@ document.head.appendChild(icon);
 
 var file_names;
 if (debugging) {
-    file_names = ["https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
+    file_names = ["libraries/lib/jquery.min.js",//"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js",
                   "libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js",
                   "libraries/DataTables-1.10.13/media/js/jquery.dataTables.min.js",
                   "libraries/rationaljs.js",
-                  log_errors && "https://cdn.ravenjs.com/3.22.1/raven.min.js", // only include this if not running locally 
+                  //log_errors && "https://cdn.ravenjs.com/3.22.1/raven.min.js", // only include this if not running locally 
                   "support/initial.js",
                   "support/functions.js",
                   "primitives/widget.js",
@@ -211,8 +211,8 @@ if (debugging) {
                   "support/publish.js",
                   "support/google_drive.js",
                   "support/utilities.js",
-                  "https://ecraft2learn.github.io/ai/ecraft2learn.js", 
-                  "https://apis.google.com/js/client.js?onload=handle_client_load",
+                  "libraries/lib/ecraft2learn.js",//"https://ecraft2learn.github.io/ai/ecraft2learn.js", 
+                  //"https://apis.google.com/js/client.js?onload=handle_client_load",
 //                   "https://www.dropbox.com/static/api/2/dropins.js", // handled below -- partial support for saving to DropBox
                   // following enables JQuery UI resize handles to respond to touch
 //                   "libraries/jquery.ui.touch-punch.min.js"
