@@ -2173,7 +2173,7 @@ window.TOONTALK.widget = (function (TT) {
                                100);
                     return;
                 }
-                save_to_google_drive = parameters.google_drive && !this.get_setting('google_drive_unavailable');
+                save_to_google_drive = false;//parameters.google_drive && !this.get_setting('google_drive_unavailable');
                 if (!save_to_google_drive && !parameters.local_storage) {
                     // nothing to save
                     if (callback) {
